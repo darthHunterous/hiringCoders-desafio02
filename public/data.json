@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "image": "images/f1-2021.jpg",
+      "name": "F1 2021",
+      "platform": "PS4",
+      "price": 299.90
+    },
+    {
+      "id": 2,
+      "image": "images/f1-2020.jpg",
+      "name": "F1 2020",
+      "platform": "PS4",
+      "price": 249.90
+    },
+    {
+      "id": 3,
+      "image": "images/f1-2019.jpg",
+      "name": "F1 2019",
+      "platform": "PS4",
+      "price": 209.90
+    },
+    {
+      "id": 4,
+      "image": "images/f1-2018.jpg",
+      "name": "F1 2018",
+      "platform": "PS4",
+      "price": 179.90
+    },
+    {
+      "id": 5,
+      "image": "images/f1-2017.jpg",
+      "name": "F1 2017",
+      "platform": "XONE",
+      "price": 149.90
+    },
+    {
+      "id": 6,
+      "image": "images/f1-2016.jpg",
+      "name": "F1 2016",
+      "platform": "XONE",
+      "price": 119.90
+    }
+  ]
+}
