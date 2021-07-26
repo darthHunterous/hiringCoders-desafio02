@@ -15,4 +15,5 @@ Desafio 02 do programa Hiring Coders de 2021, desenvolvimento de um ecommerce co
 * Ao tentar logar, se o usuário não existir no localstorage, informa que email/senha está errado e pede para tentar novamente, caso exista o login é efetuado com sucesso
 * Estando logado, o sistema identifica o usuário com um "Olá, <email_do_usuario>", alterando botões de cadastro e login para um que mostra o carrinho e outro que faz logout
 * Ao visualizar o carrinho, o usuário pode remover itens dele e ver o valor total adicionado até então
+* Botão de adicionar ao carrinho só fica ativado caso o usuário logue
 * Trata-se de um esboço, portanto a "autenticação" é feita de maneira direta, salvando a senha em plain-text no localstorage. Isto é obviamente inseguro, apenas para efeitos demonstrativos
