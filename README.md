@@ -1,70 +1,18 @@
-# Getting Started with Create React App
+# hiring-Coders-desafio02
+Desafio 02 do programa Hiring Coders de 2021, desenvolvimento de um ecommerce com cadastro de usuários e carrinho de produtos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Deploy no Netlify
+* https://paddockgamer.netlify.app/
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Funcionalidades
+* O site é responsivo, reduzindo de 3 itens por fileira para 2 ou 1 dependendo do tamanho de tela do dispositivo
+* A navbar colapsa no mobile com itens podendo ser acessados pelo "botão sanduíche", dispondo dos itens agora na vertical
+* Os produtos são lidos a partir de um `data.json`
+* Objeto que representa um usuário: `id, email, senha, nome, endereço, array com itens no carrinho`
+  * Ao adicionar ou remover item do carrinho, ele já é automaticamente atualizado no localstorage, assim os dados perseveram mesmo após fechar uma sessão
+  * A chave de cada string que representa o objeto de usuário no localstorage é identificada por `user+<email_do_usuario>`
+* Ao tentar cadastrar um usuário já cadastrado, o site informa isto
+* Ao tentar logar, se o usuário não existir no localstorage, informa que email/senha está errado e pede para tentar novamente, caso exista o login é efetuado com sucesso
+* Estando logado, o sistema identifica o usuário com um "Olá, <email_do_usuario>", alterando botões de cadastro e login para um que mostra o carrinho e outro que faz logout
+* Ao visualizar o carrinho, o usuário pode remover itens dele e ver o valor total adicionado até então
+* Trata-se de um esboço, portanto a "autenticação" é feita de maneira direta, salvando a senha em plain-text no localstorage. Isto é obviamente inseguro, apenas para efeitos demonstrativos
